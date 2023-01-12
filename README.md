@@ -33,9 +33,9 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems and notes ta
     - Backtracking
     - cadenes amb uns
     - permutacions
-    
+
 ## Notes
-1. To compile a file `f.cc`
+* To compile a file `f.cc`
    ```sh
    g++ -Wall -std=c++11 -O3 -D_GLIBCXX_DEBUG f.cc -o f
    ```
@@ -47,7 +47,7 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems and notes ta
    
    `-D_GLIBCXX_DEBUG` along others, checks that you dont go out of bounds in any access to vectors
    
-2. To go through different possible directions (e.g. up, down, left, right) or custom movements (e.g. a chess knight's L movement)
+* To go through different possible directions (e.g. up, down, left, right) or custom movements (e.g. a chess knight's L movement)
     use a vector of pairs 
     ```c++
     vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
@@ -58,26 +58,26 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems and notes ta
         //do smth
     }
     ```
-3. To set a value to infinite
+* To set a value to infinite
     ```c++
     #include <limits>
     int infinite = numeric_limits<int>::max();
     ```
-4. If you're gonna use pairs a lot use 
+* If you're gonna use pairs a lot use 
    ```c++
    typedef pair<int, int> P;
    ```
    for easier reading
    e.g. weighted graphs adjacency lists `vector<vector<P>> graph(n);`
    
-5. To read undirected graphs remember they go both ways
+* To read undirected graphs remember they go both ways
     ```c++
     int u, v;
     cin >> u >> v;
     graph[u].push_back(v);
     graph[v].push_back(u);
     ```
-6. Queues and priority queues
+* Queues and priority queues
     ```c++
     #include <queue> //includes both
     
