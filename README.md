@@ -63,3 +63,32 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems
     #include <limits>
     int infinite = numeric_limits<int>::max();
     ```
+4. If you're gonna use pairs a lot use 
+   ```c++
+   typedef pair<int, int> P;
+   ```
+   for easier reading
+   e.g. weighted graphs adjacency lists `vector<vector<P>> graph(n);`
+   
+5. To read undirected graphs remember they go both ways
+    ```c++
+    int u, v;
+    cin >> u >> v;
+    graph[u].push_back(v);
+    graph[v].push_back(u);
+    ```
+6. Queues and priority queues
+    ```c++
+    #include <queue> //includes both
+    
+    queue<int> q;
+    q.push(x);
+    q.pop();
+    q.front();
+    
+    priority_queue<int> pq;
+    priority_queue<int, vector<int>, greater<int>> pq; //for inverse order
+    pq.push(x);
+    pq.pop();
+    pq.top();
+    ```
