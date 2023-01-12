@@ -46,3 +46,15 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems
    `-O3` code optimization level 3, produces very optimized code
    
    `-D_GLIBCXX_DEBUG` along others, checks that you dont go out of bounds in any access to vectors
+   
+2. To go through different possible directions (e.g. up, down, left, right) or custom movements (e.g. a chess knight's L movement)
+    use a vector of pairs 
+    ```c++
+    vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    
+    for(int i = 0; i < dirs.size(); ++i) {
+        int newX = oldX + dirs[i].first;
+        int newY = oldY + dirs[i].second;
+        //do smth
+    }
+    ```
