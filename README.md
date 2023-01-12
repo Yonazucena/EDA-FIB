@@ -1,5 +1,5 @@
 # EDA-FIB QT 2022-2023
-my solutions to lab <a href='https://jutge.org/'>jutge</a> problems
+my solutions to lab <a href='https://jutge.org/'>jutge</a> problems and notes targeted towards the lab problems and lab exam but they might also be helpful for the written exam
 
 ## Slides Table of Contents
 1.  **Analisi d’Algorismes**
