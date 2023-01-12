@@ -58,3 +58,8 @@ my solutions to lab <a href='https://jutge.org/'>jutge</a> problems
         //do smth
     }
     ```
+3. To set a value to infinite
+    ```c++
+    #include <limits>
+    int infinite = numeric_limits<int>::max();
+    ```
